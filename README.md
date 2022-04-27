@@ -25,3 +25,17 @@ The user always plays against the AI.
 <hr>
 
 <h2 align="center">Demo Videos</h2>
+
+**Intro**
+
+https://user-images.githubusercontent.com/92792238/165528029-0b73e198-8b6c-4255-8707-f00f1f038db8.mp4
+
+**Checkers AI**
+
+https://user-images.githubusercontent.com/92792238/165528111-457d6f20-efa1-4b8c-aa53-26bd749cc0f1.mp4
+
+**Math Trivia**
+
+https://user-images.githubusercontent.com/92792238/165528158-af0562e9-6d2b-4cee-9f11-a5bc8caa178f.mp4
+
+**Tic Tac Toe AI**
