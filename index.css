@@ -1,0 +1,462 @@
+body{
+    margin:0;
+    font-family: cursive;
+}
+
+a{
+    text-decoration: none;
+}
+#background-intro{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: black;
+    z-index: 2;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#title-container{
+    width: 100%;
+    color:rgb(209, 50, 50);
+    font-size: 4rem;
+    font-weight: 1000;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: -150px;
+    margin-bottom: 50px;
+    text-shadow: 
+        0 0 4px rgb(83, 4, 4),
+        0 0 8px rgb(94, 24, 24),
+        2px 7px 0 rgb(255, 0, 0),
+        0 -1px 0 rgba(255, 255, 0, 0.61);
+}
+
+#u-title{
+    animation: intro linear 3s;
+}
+#g-title{
+    animation: intro linear 4s;
+}
+#a-title{
+    animation: intro linear 5s;
+}
+#m-title{
+    animation: intro linear 6s;
+}
+#e-title{
+    animation: intro linear 7s;
+}
+
+#cubes{
+    width: 35vh;
+    height: 35vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+#cubes>div{
+    width: 20%;
+    height: 20%;
+}
+
+#cube-1{
+    background-color: rgb(24, 24, 90);
+    animation: box-one linear 10s infinite;
+}
+#cube-2{
+    background-color: rgb(177, 27, 27);
+    animation: box-two linear 5s infinite;
+}
+#cube-3{
+    background-color: rgb(215, 218, 32);
+}
+#cube-4{
+    background-color: rgb(27, 109, 27);
+    animation: box-four linear 5s infinite;
+}
+#cube-5{
+    background-color: rgb(24, 24, 90);
+    animation: box-five linear 10s infinite;
+}
+#cube-6{
+    background-color: rgb(177, 27, 27);
+    animation: box-six linear 10s infinite;
+}
+#cube-7{
+    background-color: rgb(215, 218, 32);
+    animation: box-seven linear 5s infinite;
+}
+#cube-8{
+    background-color: rgb(27, 109, 27);
+}
+#cube-9{
+    background-color: rgb(24, 24, 90);
+    animation: box-nine linear 5s infinite;
+}
+#cube-10{
+    background-color: rgb(177, 27, 27);
+    animation: box-ten linear 10s infinite;
+}
+#cube-11{
+    background-color: rgb(215, 218, 32);
+}
+#cube-12{
+    background-color: rgb(27, 109, 27);
+}
+#cube-13{
+    background-color: rgb(24, 24, 90);
+}
+#cube-14{
+    background-color: rgb(177, 27, 27);
+}
+#cube-15{
+    background-color: rgb(215, 218, 32);
+}
+#cube-16{
+    background-color: rgb(27, 109, 27);
+    animation: box-sixteen linear 10s infinite;
+}
+#cube-17{
+    background-color: rgb(24, 24, 90);
+    animation: box-seventeen linear 5s infinite;
+}
+#cube-18{
+    background-color: rgb(177, 27, 27);
+}
+#cube-19{
+    background-color: rgb(215, 218, 32);
+    animation: box-nineteen linear 5s infinite;
+}
+#cube-20{
+    background-color: rgb(27, 109, 27);
+    animation: box-twenty linear 10s infinite;
+}
+#cube-21{
+    background-color: rgb(24, 24, 90);
+    animation: box-twenty-one linear 10s infinite;
+}
+#cube-22{
+    background-color: rgb(177, 27, 27);
+    animation: box-twenty-two linear 5s infinite;
+}
+#cube-23{
+    background-color: rgb(215, 218, 32);
+}
+#cube-24{
+    background-color: rgb(27, 109, 27);
+    animation: box-twenty-four linear 5s infinite;
+}
+#cube-25{
+    background-color: rgb(24, 24, 90);
+    animation: box-twenty-five linear 10s infinite;
+}
+
+#continue{
+    color: white;
+    font-weight: 1000;
+    font-size: 1.5rem;
+    animation: show-up 8s linear;
+    margin-top: 50px;
+}
+#continue:hover{
+    cursor: pointer;
+}
+
+@keyframes intro{
+    from{
+        transform: perspective(100px) translateZ(-4000px);
+    }
+    50%{
+        transform: perspective(500px) translateZ(0);
+    }
+    70%{
+        transform: rotateY(180deg);
+    }
+    90%{
+        text-shadow:
+            0 -4px 0 rgba(255, 255, 255, 0.548),
+            0 4px 0 rgba(255, 255, 255, 0.603),
+            4px 0 0 rgba(255, 255, 255, 0.61),
+            -4px 0 0 rgba(255, 255, 255, 0.603);
+    }
+}
+
+@keyframes show-up{
+    0%{
+        color:black;
+    }
+    95%{
+        color:black;
+    }
+    100%{
+        color:white;
+    }
+}
+
+@keyframes box-one{
+    10%{
+        transform: translateX(-100%);
+    }
+    20%{
+        transform: translateX(-100%) translateY(400%);
+    }
+    30%{
+        transform: translateX(0) translateY(400%);
+    }
+    40%{
+        transform: translateX(0) translateY(500%);
+    }
+    50%{
+        transform: translateX(400%) translateY(500%);
+    }
+    60%{
+        transform: translateX(400%) translateY(400%);
+    }
+    70%{
+        transform: translateX(500%) translateY(400%);
+    }
+    80%{
+        transform: translateX(500%) translateY(-100%);
+    }
+    90%{
+        transform: translateX(0) translateY(-100%);
+    }
+}
+
+@keyframes box-two{
+    33%{
+        transform: translateX(-100%) translateY(-100%);
+    }
+    66%{
+        transform:  translateX(-100%);
+    }
+}
+@keyframes box-four{
+    33%{
+        transform: translateX(100%) translateY(-100%);
+    }
+    66%{
+        transform: translateX(100%);
+    }
+}
+
+@keyframes box-five{
+    10%{
+        transform: translateY(-100%);
+    }
+    20%{
+        transform: translateX(-400%) translateY(-100%);
+    }
+    30%{
+        transform: translateX(-400%) translateY(0);
+    }
+    40%{
+        transform: translateX(-500%) translateY(0);
+    }
+    50%{
+        transform: translateX(-500%) translateY(400%);
+    }
+    60%{
+        transform: translateX(-400%) translateY(400%);
+    }
+    70%{
+        transform: translateX(-400%) translateY(500%);
+    }
+    80%{
+        transform: translateX(100%) translateY(500%);
+    }
+    90%{
+        transform: translateX(100%) translateY(0);
+    }
+}
+@keyframes box-six{
+    10%{
+        transform: translateX(-100%);
+    }
+    20%{
+        transform: translateX(-100%) translateY(400%);
+    }
+    30%{
+        transform: translateX(500%) translateY(400%);
+    }
+    40%{
+        transform: translateX(500%) translateY(-200%);
+    }
+    50%{
+        transform: translateX(-100%) translateY(-200%);
+    }
+    60%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes box-seven{
+    50%{
+        transform: translateY(-100%);
+    }
+}
+@keyframes box-nine{
+    50%{
+        transform: translateY(-100%);
+    }
+}
+@keyframes box-ten{
+    10%{
+        transform: translateX(100%);
+    }
+    20%{
+        transform: translateX(100%) translateY(-200%);
+    }
+    30%{
+        transform: translateX(-500%) translateY(-200%);
+    }
+    40%{
+        transform: translateX(-500%) translateY(400%);
+    }
+    50%{
+        transform: translateX(100%) translateY(400%);
+    }
+    60%{
+        transform: translateX(100%);
+    }
+}
+@keyframes box-sixteen{
+    10%{
+        transform: translateX(-100%);
+    }
+    20%{
+        transform: translateX(-100%) translateY(-400%);
+    }
+    30%{
+        transform: translateX(500%) translateY(-400%);
+    }
+    40%{
+        transform: translateX(500%) translateY(200%);
+    }
+    50%{
+        transform: translateX(-100%) translateY(200%);
+    }
+    60%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes box-seventeen{
+    50%{
+        transform: translateY(100%);
+    }
+}
+@keyframes box-nineteen{
+    50%{
+        transform: translateY(100%);
+    }
+}
+
+@keyframes box-twenty{
+    10%{
+        transform: translateX(100%);
+    }
+    20%{
+        transform: translateX(100%) translateY(200%);
+    }
+    30%{
+        transform: translateX(-500%) translateY(200%);
+    }
+    40%{
+        transform: translateX(-500%) translateY(-400%);
+    }
+    50%{
+        transform: translateX(100%) translateY(-400%);
+    }
+    60%{
+        transform: translateX(100%);
+    }
+}
+
+@keyframes box-twenty-one{
+    10%{
+        transform: translateY(100%);
+    }
+    20%{
+        transform: translateX(400%) translateY(100%);
+    }
+    30%{
+        transform: translateX(400%) translateY(0);
+    }
+    40%{
+        transform: translateX(500%) translateY(0);
+    }
+    50%{
+        transform: translateX(500%) translateY(-400%);
+    }
+    60%{
+        transform: translateX(400%) translateY(-400%);
+    }
+    70%{
+        transform: translateX(400%) translateY(-500%);
+    }
+    80%{
+        transform: translateX(-100%) translateY(-500%);
+    }
+    90%{
+        transform: translateX(-100%) translateY(0);
+    }
+}
+
+@keyframes box-twenty-two{
+    33%{
+        transform: translateX(-100%) translateY(100%);
+    }
+    66%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes box-twenty-three{
+    50%{
+        transform: translateX(100%);
+    }
+}
+@keyframes box-twenty-four{
+    33%{
+        transform: translateX(100%) translateY(100%);
+    }
+    66%{
+        transform: translateX(100%);
+    }
+}
+
+@keyframes box-twenty-five{
+    10%{
+        transform: translateX(100%);
+    }
+    20%{
+        transform: translateX(100%) translateY(-400%);
+    }
+    30%{
+        transform: translateX(0) translateY(-400%);
+    }
+    40%{
+        transform: translateX(0) translateY(-500%);
+    }
+    50%{
+        transform: translateX(-400%) translateY(-500%);
+    }
+    60%{
+        transform: translateX(-400%) translateY(-400%);
+    }
+    70%{
+        transform: translateX(-500%) translateY(-400%);
+    }
+    80%{
+        transform: translateX(-500%) translateY(100%);
+    }
+    90%{
+        transform: translateX(0) translateY(100%);
+    }
+}

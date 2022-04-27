@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+    font-family: monospace;
+    background-image: url('./fog.jpg');
+    color:white;
+    text-shadow:
+        0 0 6px rgba(176, 226, 220, 0.92),
+        0 0 30px rgba(202,228,225,0.34),
+        0 0 12px rgba(17, 65, 117, 0.52),
+        0 0 21px rgba(30,132,242,0.92),
+        0 0 34px rgba(30,132,242,0.78),
+        0 0 54px rgba(30,132,242,0.92);
+}
+
+#about-modal{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top:25%;
+    background-color: #171717;
+    text-align: center;
+}
+#about-modal>p{
+    margin-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 1rem;
+}
+#close-about-modal{
+    margin-top: 40px;
+    font-size: 1.5rem;
+}
+#close-about-modal:hover{
+    color:yellow;
+    cursor: pointer;
+}
+
+header{
+    background-color: #171717;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header>div{
+    font-size: 2.5rem;
+    font-weight: 1000;
+}
+header>div:nth-child(2){
+   margin-left: 5%;
+   margin-right: 5%;
+}
+
+section{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section>button{
+    width: 50%;
+    background-color: black;
+    color:white;
+    font-size: 1.3rem;
+    font-family: cursive;
+}
+section>button:hover{
+    cursor: pointer;
+    color:black;
+    background-color: white;
+}
+
+#game-container{
+    margin: auto;
+    margin-top: 35px;
+    width: 80%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#game-container>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+
+#cell-00,#cell-01,#cell-02,#cell-10,#cell-11,#cell-12{
+    border-bottom: 2px white solid;
+}
+#cell-00,#cell-01,#cell-20,#cell-10,#cell-11,#cell-21{
+    border-right: 2px white solid;
+}
+
+#spam-wall{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+}
+
+.hidden{
+    display: none;
+}
+
+.win-path{
+    color:red;
+}
+
+footer{
+    position: fixed;
+    bottom: 4px;
+    left:2px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 5px;
+    border: black 2px solid;
+    font-size: 20px;
+    background-color: #171717;
+    box-shadow: 0 0 15px 0 black;
+}
+
+footer>a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 0 6px rgb(176 226 220 / 92%), 0 0 30px rgb(202 228 225 / 34%), 0 0 12px rgb(17 65 117 / 52%), 0 0 21px rgb(30 132 242 / 92%), 0 0 34px rgb(30 132 242 / 78%), 0 0 54px rgb(30 132 242 / 92%);
+    font-weight: 600;
+}
+
+footer>a:hover{
+    cursor: pointer;
+    color:black;
+}
+
+@media (min-width: 500px){
+    #game-container>div{
+        font-size: 6rem;
+    }
+}
+@media (min-width: 650px){
+    #game-container{
+        width: 650px;
+    }
+    #game-container>div{
+        font-size: 7rem;
+    }
+    section{
+        width: 650px;
+        margin:auto;
+    }
+}
+
+@media (min-width: 700px){
+    #about-modal{
+        width: 75%;
+        left:12.5%;
+    }
+}
+
+@media (min-width: 1000px){
+    #about-modal{
+        width: 50%;
+        left:25%;
+    }
+}

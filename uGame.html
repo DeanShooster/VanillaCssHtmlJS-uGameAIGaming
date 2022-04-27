@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./uGameCSS.css">
+        <link rel="icon" type="image/x-icon" href="./Pictures/favicon.png">
+        <title>uGame</title>
+    </head>
+
+    <body>
+        <audio id='lobby-music' class='complete-hide' controls loop>
+            <source src='./Audio/Lobby background music.mp3' type='audio/mp3'>
+        </audio>
+        <div id='guides'>
+            <h1><u>About</u></h1>
+            <p><u>Made by:</u> Dean Shooster</p>
+            <p><u>Theme:</u> Neon + 90's approach</p>
+            <p><u>Support:</u> 360px to 1500px.</p>
+            <p>Vanilla HTML/CSS/JS gaming site which holds different board/mouse games.The purpose of this project is to show basic web skills, critically java script skills as games tend to have deep logic design.</p>
+            <button id='about-close'>Close</button>
+        </div>
+        
+        <header id='header'>
+            <div id='logo'>uGame</div>
+            <div id='nav-container'>
+                <div id='music-control'>Music:On</div>
+                <div id='about'>About</div>
+            </div>
+        </header>
+        <div id='video-container'>
+            <video controls loop id='lobby-video'>
+                <source src='./Video/uGame Lobby Video.mp4' type='video/mp4'>
+            </video>
+        </div>
+        <h1>G a m e s</h1>
+        <div class='game-container'>
+            <a href='./TicTacToe/TicTacToe.html'>
+                <img src='./Pictures/TicTacToe.png'>
+                <div class='mouse-over-img'>
+                    <div class='hide'>TicTacToe</div>
+                </div>
+            </a>
+            <a href='./Checkers/Checkers.html'>
+                <img src='./Pictures/Checkers.jpg'>
+                <div class='mouse-over-img'>
+                    <div class='hide'>Checkers</div>
+                </div>
+            </a>
+            <a href='./Math Trivia/MathTrivia.html'>
+                <img src='./Pictures/Math.jfif'>
+                <div class='mouse-over-img'>
+                    <div class='hide'>M a t h</div>
+                </div>
+            </a>
+        </div>
+    </body>
+    <script src='./uGameJS.js' controls></script>
+</html>

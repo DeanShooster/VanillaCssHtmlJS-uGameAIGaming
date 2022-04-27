@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="../Pictures/favicon.png">
+        <link rel='stylesheet' href='./CheckersVisual.css'>
+        <title>Checkers</title>
+    </head>
+
+    <body>
+        <header id='header'>
+            <div class='white circle'>
+                <div class='crown'></div>
+            </div>
+            <div>C h e c k e r s</div>
+            <div class='red circle'>
+                <div class='crown'></div>
+            </div>
+        </header>
+
+        <div id='board-container'>
+            <div id='block_move' class='hidden'></div>
+            <div id='sign'></div>
+            <div id='board'></div>
+        </div>
+        <div id='buttons'>
+            <button id='rules'>Rules</button>
+            <button id='start-game'>Start Game</button>
+            <button id='about'>About</button>
+        </div>
+        
+        <div id='about_modal' class='modal'>
+            <p><u>Theme:</u> 90's Play rooms.</p>
+            <p><u>Support: 400px and above.</u></p>
+            <p>Classic Checkers game against the computer. The algorithm follows 4 principles.</p>
+            <ul>
+                <li> Will capture if can.</li>
+                <li> Moves forward as long as there is no threat or will edge a piece in order to fortify.</li>
+                <li> Kings will catch up to the piece line and col in order to capture.</li>
+            </ul>
+            <h2 id='close_about_modal'>Close</h2>
+        </div>
+
+        <footer>
+            <a href='../uGame.html'>Home Page</a>
+        </footer>
+
+    </body>
+
+    <script src='./CheckersAlgorithem.js'></script>
+</html>

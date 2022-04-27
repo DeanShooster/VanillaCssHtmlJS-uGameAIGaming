@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./TicTacToeVisual.css">
+    <link rel="icon" type="image/x-icon" href="../Pictures/favicon.png">
+    <title>uGame - TicTacToe</title>
+</head>
+
+    <body>
+        <div id='about-modal'>
+            <p><u>Theme:</u> Foggy + 90's Neon lights.</p>
+            <p><u>Support: 350px and above.</u></p>
+            <p>Classic TicTacToe game against the computer. The algorithm is beatable if played right in some cases, Don't count on beating it every game!</p>
+            <div id='close-about-modal'>Close</div>
+        </div>
+        <header>
+            <div>O</div>
+            <div>Tic Tac Toe</div>
+            <div>X</div>
+        </header>
+        <section>
+            <button id='rules'>Rules</button>
+            <button id='about'>About</button>
+        </section>
+        <main>
+            <div id='spam-wall' class='hidden'></div>
+            <div id='game-container'>
+                <div id='cell-00'></div>
+                <div id='cell-01'></div>
+                <div id='cell-02'></div>
+                <div id='cell-10'></div>
+                <div id='cell-11'></div>
+                <div id='cell-12'></div>
+                <div id='cell-20'></div>
+                <div id='cell-21'></div>
+                <div id='cell-22'></div>
+            </div>
+        </main>
+
+        <footer>
+            <a href='../uGame.html'>Home Page</a>
+        </footer>
+
+    </body>
+
+    <script src='./TicTacToeAlgorithem.js'></script>
+</html>

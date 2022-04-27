@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../Pictures/favicon.png">
+    <link rel='stylesheet' href='./MathTriviaVisual.css'>
+    <title>Math Trivia</title>
+</head>
+
+    <body>
+        <div id='about_modal' class='modal'>
+            <p><u>Theme:</u> 90's Playground</p>
+            <p><u>Support: 350px and above.</u></p>
+            <p>A very basic Trivia game with FILE manipulation and CSS effects.</p>
+            <h2 id='close_about_modal'>Close</h2>
+        </div>
+
+        <header>
+            <img src='../Pictures/MathTrivia/logo.png'>
+            <h1>Math Trivia</h1>
+            <img src='../Pictures/MathTrivia/logo.png'>
+        </header>
+        <div id='about_container'>
+            <button id='rules'>Rules</button>
+            <button id='about'>About</button>
+            <button id='start_game'>Start</button>
+        </div>
+
+        <main id='game_container'>
+            <h2>Question <span id='question_number'>0</span></h2>
+            <p id='question'></p>
+
+            <div id='answers'>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id='time'>Timer: <span id='timer'>200</span></div>
+            <div id='points'>Points: <span id='current_points'>0000</span></div>
+        </main>
+
+        <div id='wall' class='hidden'></div>
+        <div id='game_over' class='hidden'>
+            <h2>(:  Game Over  :)</h2>
+            <h2>Total Points: <span id='end_game_total_points'></span></h2>
+            <button id='play_again'>Play Again</button>
+        </div>
+
+        <footer>
+            <a href='../uGame.html'>Home Page</a>
+        </footer>
+
+    </body>
+    
+    <script src='./MathTriviaAlgorithem.js'></script>
+</html>
